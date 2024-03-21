@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+.container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    align-content: center;
+    height: 7vh;
+    padding: 5px;
+
+}
+
+nav{
+    background-color:rgba(246, 241, 246, 0.874);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.nav-items a {
+    text-decoration: none; /* Remove default underline */
+    font-family:sans-serif;
+    font-weight: bolder;
+    position: relative; /* Position relative for pseudo-element */
+    font-size: 18px;
+}
+
+.nav-items a::after {
+    content: ''; /* Required for pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust as needed */
+    width: 100%;
+    height: 2px; /* Height of underline */
+    background-color: transparent; /* Initial color of underline */
+    transition: all 0.3s ease; /* Transition effect */
+}
+
+.nav-items a:hover::after {
+    background-color: red; /* Change underline color on hover */
+    bottom: -6px; /* Adjust as needed */
+}
+
+.logo{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: rgb(254, 189, 67);
+}
+
+.mainbox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    position:static;
+}
+.heading p{
+    color: red;
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+}
+
+.cart-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+
+.boxes{
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    border:1px solid red;
+    border-radius: 6px;
+}
+
+.offer{
+    width: 100%;
+    padding-top: 20px;
+    padding-top: 10px;
+    height: 200px;
+    background-color: black;
+    width: relative;
+    color: white;
+    margin-bottom: 20px;
+}
+.design{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    margin-top: 10px;
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.customFurniture{
+    display: flex;
+    flex-wrap: wrap;
+    
+}

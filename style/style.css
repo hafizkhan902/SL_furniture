@@ -1,0 +1,204 @@
+/* Global resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Base styles */
+body {
+    background-color: rgb(227, 225, 223);
+    font-family: Arial, sans-serif; /* Use a common font stack */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 7vh;
+    padding-top: 4px;
+    padding-left: 5px;
+}
+
+nav {
+    background-color: rgba(246, 241, 246, 0.874);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Responsive navigation */
+.nav-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 100%; /* Limit the width of the navigation items */
+}
+
+.nav-items a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+}
+
+/* Add media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        height: auto; /* Adjust height automatically */
+    }
+    
+    .nav-items {
+        width: 100%; /* Occupy full width */
+        justify-content: center; /* Center the navigation items */
+    }
+    
+    .nav-items a {
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+}
+
+.logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: rgb(254, 189, 67);
+}
+
+.mainbox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    position: static;
+}
+
+.heading p {
+    color: red;
+    text-align: center;
+    word-spacing: 4px;
+    letter-spacing: 4px;
+}
+
+.cart-box {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    gap: 30px;
+    padding-bottom: 20px;
+    justify-content: center;
+    color: rgba(40, 49, 40, 0.836);
+}
+
+.boxes {
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    position: relative;
+    border-radius: 20px;
+
+}
+
+.offer {
+    width: 100%;
+    padding-top: 10px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    margin-top: 10px;
+    height: 50px;
+    width: 180px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.customFurniture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(102, 107, 86);
+}
+
+.customFurniture .heading p {
+    color: red;
+}
+
+.visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(195, 194, 194, 0.448);
+    border-radius: 15px;
+    height: 150px;
+}
+
+.wardrobe {
+    max-height: 134px; /* Limit the maximum height */
+    max-width: 100%; /* Make sure the image does not exceed its container */
+}
+
+.item_details {
+    padding: 7px 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.item_details h4 {
+    font-size: 15px;
+    color: rgba(190, 188, 188, 0.723);
+    padding: 5px 0px;
+}
+
+.cart_icon {
+    position: absolute;
+    right: 10px;
+    bottom: 30px;
+    font-size: 20px;
+    background-color: rgb(225, 243, 222);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price h3 {
+    padding: 7px 5px;
+}
+
+.review {
+    padding: 0px 5px;
+    color: orange;
+}
+.twenty{
+    color: red;
+    font-size: 30px;
+}
+
